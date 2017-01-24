@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ProximitySensor1</string>
+    <string name="start_watch">Start Watch</string>
+    <string name="track_location">Track location</string>
+    <string name="configure_track">Configure Track</string>
+    <string-array name="interval">
+        <item>Sec</item>
+        <item>Min</item>
+        <item>Hour</item>
+    </string-array>
+    <string-array name="time_interval">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </string-array>
+    <string name="choose_time_interval">Choose Time Interval</string>
+    <string name="watchingMessage">Syena is watching...</string>
+    <string name="notWatchingMessage">Not Watching</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_add_watcher"
+    tools:context=".StartWatchActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Phone Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phNumView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Pick Contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pickContact"
+        android:layout_marginLeft="52dp"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/refreshRateText"
+        android:layout_marginEnd="54dp" />
+
+    <Button
+        android:text="Add Watch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_below="@+id/pickContact"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="71dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/refreshRateText"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="15dp"
+        android:selectAllOnFocus="true"
+        tools:visibility="visible"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/refreshRateView"
+        android:layout_alignBottom="@+id/refreshRateView"
+        android:layout_toEndOf="@+id/refreshRateView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh rate"
+        android:id="@+id/refreshRateView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_marginBottom="55dp"
+        android:layout_above="@+id/pickContact"
+        android:layout_alignEnd="@+id/phNumView" />
+</RelativeLayout>
